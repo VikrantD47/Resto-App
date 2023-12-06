@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="">Resto</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <!-- Existing navigation links (aligned to the left) -->
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="add">Add restaurant</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="list-resto">List of restaurants</a>
+      </li>
+      <!-- <li class="nav-item active">
+        <a class="nav-link" routerLink="update-resto">Update restaurant</a>
+      </li> -->
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="">Login user</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="register">Register user</a>
+      </li>
+    </ul>
+
+    <!-- Logout link (aligned to the right) -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" (click)="logout()" style="cursor: pointer;">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+c
+<div class="container">
+  <router-outlet></router-outlet>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © 2023 Copyright:
+      <a href="/"> registerestaurant.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>

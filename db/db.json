@@ -1,0 +1,36 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Grape Embassy",
+      "address": "Mhasrul, Nashik",
+      "email": "grapembasy@test.com"
+    },
+    {
+      "name": "Shagun Dinning",
+      "address": "Gangapur Road, Nashik",
+      "email": "shagun@test.com",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Tushar Misal",
+      "address": "College Road, Nashik",
+      "email": "tusharmisal@test.com"
+    },
+    {
+      "name": "Pocket Cafe",
+      "address": "Model Colony, Nashik",
+      "email": "pocketcafe@gmail.com",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "name": "Vikrant Abhay Deshmukh",
+      "password": "Vikrant@123",
+      "email": "vikrant47deshmukh@gmail.com",
+      "id": 1
+    }
+  ]
+}

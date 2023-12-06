@@ -1,0 +1,48 @@
+<h2>Edit Restaurant</h2>
+<div
+  *ngIf="alert"
+  class="alert alert-primary alert-dismissible fade show"
+  role="alert"
+>
+  <strong>Update!</strong> Your data is Updated.
+  <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<form [formGroup]="editresto" (ngSubmit)="updateresto()">
+  <div class="form-group">
+    <label for="name"><strong> Name:</strong></label>
+    <input
+      type="text"
+      id="name"
+      class="form-control"
+      placeholder="Enter Name"
+      formControlName="name"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="address"><strong>Address:</strong></label>
+    <input
+      type="text"
+      id="address"
+      class="form-control"
+      placeholder="Enter address"
+      formControlName="address"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="email"><strong>Email:</strong></label>
+    <input
+      type="email"
+      id="email"
+      class="form-control"
+      placeholder="Enter email"
+      formControlName="email"
+    />
+  </div>
+  <br />
+  <!-- Add a submit button to submit the form -->
+  <button type="submit" class="btn btn-primary">Update</button>
+</form>

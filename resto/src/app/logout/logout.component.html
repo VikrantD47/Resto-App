@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>Logout Here</h2>
+  
+    <div *ngIf="showAlert" class="alert alert-success alert-dismissible fade show" role="alert">
+      You have been successfully logged out.
+      <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  
+    <button (click)="performLogout()" class="btn btn-primary">Logout</button>
+  </div>
